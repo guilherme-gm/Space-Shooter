@@ -4,12 +4,12 @@ using System.Collections;
 public class RandomRotator : MonoBehaviour {
 	public float Tumble;
 
-	private Rigidbody RB;
+	private Rigidbody rb;
 
 	void Start()
 	{
-		RB = this.GetComponent<Rigidbody> ();
+		rb = this.GetComponent<Rigidbody> ();
 
-		RB.angularVelocity = Random.insideUnitSphere * Tumble;
+		rb.angularVelocity = Random.insideUnitSphere * Tumble;
 	}
 }

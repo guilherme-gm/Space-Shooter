@@ -9,7 +9,7 @@ public class Boundary
 
 public class PlayerController : MonoBehaviour {
 
-	public float Speed;
+	public float speed;
 	public float tilt;
 	public float fireRate;
 	public float nextFire;
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour {
 		float moveVertical = Input.GetAxis ("Vertical");
 
 		Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-		RB.velocity = movement  * Speed;
+		RB.velocity = movement  * speed;
 
 		RB.position = new Vector3
 		(

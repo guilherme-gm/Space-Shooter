@@ -3,10 +3,10 @@ using System.Collections;
 
 public class Mover : MonoBehaviour {
 
-	public float Speed;
+	public float speed;
 
 	// Use this for initialization
 	void Start () {
-		this.GetComponent<Rigidbody> ().velocity = transform.forward * Speed;
+		this.GetComponent<Rigidbody> ().velocity = transform.forward * speed;
 	}
 }
